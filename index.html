@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body onload="comecar()">
+    <section id="fundo">
+        <header>
+            <br><h1 class="cabecalho">Urna Eletrônica: League of Legends</h1></header>
+    <section>
+
+        
+        <div class="maquina">
+
+            <!-- Tela de Exibição -->
+            <div class="tela">
+                <div class="telainicial sumir">
+                    <p class="text-presidente">Presidente de Runeterra </p>
+                    <input type="text" name="digito" value="" class="digito1" maxlength="1" readonly>
+                    <input type="text" name="digito" value="" class="digito2" maxlength="1" readonly>
+                </div>
+
+                <!-- Voto em Branco -->
+                <div class="cliquebranco sumir">
+                    <center><h1>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp VOTO EM BRANCO</h1></center><br>
+                    <br><br><br>
+                    <hr>
+                    Aperte a tecla
+                    <br>
+                    <strong>VERDE</strong> &nbsp&nbsp&nbsp&nbsp&nbsp   para CONFIRMAR este voto
+                    <br>
+                    <strong>LARANJA</strong> &nbsp para REINICIAR este voto
+                </div>
+
+                <!-- Voto Inválido -->
+                <div class="invalido sumir">
+                    <center>
+                        <p class="digito-invalido">Você digitou:</p>
+                        <br><br>
+                        <h1>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp NÚMERO INVÁLIDO</h1></center><br>
+                    <br><br><br>
+                    <hr>
+                    Aperte a tecla
+                    <br>
+                    <strong>VERDE</strong> &nbsp&nbsp&nbsp&nbsp&nbsp   para CONFIRMAR este voto
+                    <br>
+                    <strong>LARANJA</strong> &nbsp para REINICIAR este voto
+                </div>
+
+                <!-- Voto em Kayle -->
+                <div class="kayle sumir">
+                    <span>SEU VOTO PARA</span>
+                    <P><strong>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PRESIDENTE</strong></P><br>
+                    <input type="text" name="digitado" value="2" class="digitado1" maxlength="1" readonly>
+                    <input type="text" name="digitado" value="2" class="digitado2" maxlength="1" readonly>
+                    <br>
+                    <p><strong>Nome</strong>: kayle, a Justa</p>
+                    <P><strong>Partido</strong>: PM (Partido do MITO)</P>
+                    <p><strong>Slogan</strong>: <i>"Bandido bom é bandido m0rt0!"</i></p>
+                    <p><strong>Vice-presidente</strong>: Luxanna </p>
+                    <hr>
+                    Aperte a tecla
+                    <br>
+                    <strong>VERDE</strong> &nbsp&nbsp&nbsp&nbsp&nbsp   para CONFIRMAR este voto
+                    <br>
+                    <strong>LARANJA</strong> &nbsp para REINICIAR este voto
+                    <img class="fotokayle" src="/images/kayle.jpg" alt="">
+                    <img class="fotolux" src="/images/lux.jpg" alt="">
+
+                </div>
+
+                <!-- Voto em Qiyana -->
+                <div class="qiyana sumir">
+                    <span>SEU VOTO PARA</span>
+                    <P><strong>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PRESIDENTE</strong></P><br>
+                    <input type="text" name="digitado" value="2" class="digitado1" maxlength="1" readonly>
+                    <input type="text" name="digitado" value="4" class="digitado2" maxlength="1" readonly>
+                    <br>
+                    <p><strong>Nome</strong>: Qiyana, a Imperatriz dos Elementos</p>
+                    <P><strong>Partido</strong>: PCLGBT (Partido da Causa LGBT)</P>
+                    <p><strong>Slogan</strong>: <i>"Juntos encontraremos a cura <3"</i></p>
+                    <p><strong>Vice-presidente</strong>: Ezreal</p>
+                    <hr>
+                    Aperte a tecla
+                    <br>
+                    <strong>VERDE</strong> &nbsp&nbsp&nbsp&nbsp&nbsp   para CONFIRMAR este voto
+                    <br>
+                    <strong>LARANJA</strong> &nbsp para REINICIAR este voto
+                    <img class="fotoqiyana" src="/images/qiyana.jpg" alt="">
+                    <img class="fotoezreal" src="/images/ezreal.jpg" alt="">
+
+                </div>
+
+                <!-- Voto em Irelia -->
+                <div class="irelia sumir">
+                    <span>SEU VOTO PARA</span>
+                    <P><strong>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PRESIDENTE</strong></P><br>
+                    <input type="text" name="digitado" value="1" class="digitado1" maxlength="1" readonly>
+                    <input type="text" name="digitado" value="1" class="digitado2" maxlength="1" readonly>
+                    <br>
+                    <p><strong>Nome</strong>: Irelia, a Dançarina das Lâminas</p>
+                    <P><strong>Partido</strong>: IONIA (Ionia)</P>
+                    <p><strong>Slogan</strong>: <i>"Se isso afeta Ionia, vote em mim!"</i></p>
+                    <p><strong>Vice-presidente</strong>: Akali</p>
+                    <hr>
+                    Aperte a tecla
+                    <br>
+                    <strong>VERDE</strong> &nbsp&nbsp&nbsp&nbsp&nbsp   para CONFIRMAR este voto
+                    <br>
+                    <strong>LARANJA</strong> &nbsp para REINICIAR este voto
+                    <img class="fotoirelia" src="/images/irelia.jpg" alt="">
+                    <img class="fotoakali" src="/images/akali.jpg" alt="">
+
+                </div>
+
+                <!-- Voto em Sylas -->
+                <div class="sylas sumir">
+                    <span>SEU VOTO PARA</span>
+                    <P><strong>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PRESIDENTE</strong></P><br>
+                    <input type="text" name="digitado" value="1" class="digitado1" maxlength="1" readonly>
+                    <input type="text" name="digitado" value="3" class="digitado2" maxlength="1" readonly>
+                    <br>
+                    <p><strong>Nome</strong>: Sylas, o Abjugado</p>
+                    <P><strong>Partido</strong>: PAB (Partido Anti-Burguês)</P>
+                    <p><strong>Slogan</strong>: <i>"Sempre um passo a frente da lei!"</i></p>
+                    <p><strong>Vice-presidente</strong>: Morgana</p>
+                    <hr>
+                    Aperte a tecla
+                    <br>
+                    <strong>VERDE</strong> &nbsp&nbsp&nbsp&nbsp&nbsp   para CONFIRMAR este voto
+                    <br>
+                    <strong>LARANJA</strong> &nbsp para REINICIAR este voto
+                    <img class="fotosylas" src="/images/sylas.jpg" alt="">
+                    <img class="fotomorgana" src="/images/morgana.jpg" alt="">
+
+                </div>
+
+                <img class="jax sumir" src="images/jax.png" alt="">
+
+                <!-- CLique em Confirma -->
+                <div class="cliqueconfirma sumir">
+                    <h1 style="margin-top: -300px;"><font style="font-size: 150px;">FIM</font></h1>
+                </div>
+            </div>
+            
+
+            <!-- Conteúdo Acima do Painel de Botões -->
+            <div class="logo">
+                <img class="logoruneterra" src="/images/runeterra.png" alt="Runeterra">
+                <h4 class="logomsg">Justiça Eleitoral <br> de Runeterra</h4>
+            </div>
+
+            <!-- Painel de Botões -->
+            <div class="painel">
+                <input class="numero" type="button" value="1" id="um" onclick='digitar("1")'>
+                <input class="numero" type="button" value="2" id="dois" onclick='digitar("2")'>
+                <input class="numero" type="button" value="3" id="tres" onclick='digitar("3")'> 
+                <br>
+                <input class="numero" type="button" value="4" id="quatro" onclick='digitar("4")'>
+                <input class="numero" type="button" value="5" id="cinco" onclick='digitar("5")'>
+                <input class="numero" type="button" value="6" id="seis" onclick='digitar("6")'>
+                <br>
+                <input class="numero" type="button" value="7" id="sete" onclick='digitar("7")'>
+                <input class="numero" type="button" value="8" id="oito" onclick='digitar("8")'>
+                <input class="numero" type="button" value="9" id="nove" onclick='digitar("9")'>
+                <br>
+                <input class="numero" type="button" value="0" id="zero" onclick='digitar("0")'>
+                <br>
+                <input class="acao" type="button" value="BRANCO" id="branco" onclick="branco()">
+                <input class="acao" type="button" value="CORRIGE" id="corrige" onclick="corrige()">
+                <input class="acao" type="button" value="CONFIRMA" id="confirma" onclick="confirma()">
+            </div>
+        </div>
+
+        <audio class="jaxVotou" src="images/jaxVotou.mp3"></audio>
+
+    
+    </section>
+    <footer><p class="rodape">&copy;MárcioDiniz</p><br></footer>
+    
+    <img class="yuumi" src="/images/yuumi.gif" alt="Yuumi">
+    </section>
+    <div class="telabranca"></div>
+</body>
+</html>
