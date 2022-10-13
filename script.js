@@ -87,16 +87,19 @@ const loop = setInterval(() => {
     }
 }, 10);
 
+
+
 // Funções dos Botões ///////////////////////////////////////////////
 function digitar(numero) {
-    if (fim === false) {
-        if (digito1.value == "") {
+    if (fim === false && votoBranco === false) {
+        if (digito1.value == "" && digito2.value == "") {
             digito1.value = numero;
             digito1.style.animation = 'none';
             digito2.style.animation = '';
-        } else if (digito1.value != "") {
+        } else if (digito1.value != "" && digito2.value == "") {
             digito2.value = numero;
             digito2.style.animation = 'none';
+            
         }
     }
 }
