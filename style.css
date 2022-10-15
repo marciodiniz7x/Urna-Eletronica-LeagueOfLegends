@@ -8,14 +8,12 @@ body {
     font: normal 15pt Arial;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: aliceblue;
-    
     text-align: center;
     background: url(/images/background.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 1080px;
     width: 100%;
-    
 }
 
 .cabecalho {
@@ -28,7 +26,6 @@ body {
     margin-top: -730px;
     margin-left: 300px;
     transition: 1500ms;
-    
 }
 .yuumiAngular {
     position: absolute;
@@ -54,7 +51,6 @@ body {
     height: 450px;
     margin: auto;
     border: 2px solid rgb(46, 46, 46);
-    
 }
 
 .tela {
@@ -66,7 +62,6 @@ body {
     border: 1px solid rgb(196, 193, 193);
     margin-top: 20px;
     margin-left: 20px;
-    
 }
 
 .painel {
@@ -291,12 +286,11 @@ body {
 
 /* TELA BRANCA //////////////////////////////////////////////////// */
 .telabranca {
-    
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    
+ 
     position: absolute;
     background: linear-gradient(45deg, blue, violet);
     background-size: 100%;
@@ -311,8 +305,6 @@ body {
     width: 250px;
     left: -80px;
     bottom: 1px;
-   
-
 }
 .jaxInverso {
     position: absolute;
