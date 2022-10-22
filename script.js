@@ -28,10 +28,11 @@ let telaBranca = document.querySelector('.telabranca');
 
 let jax = document.querySelector('.jax');
 const music = new Audio('images/jaxVotou.mp3');
-const kayleVoz = new Audio('images/kayleVoz.mp3');
-const ireliaVoz = new Audio('images/ireliaVoz.mp3');
-const qiyanaVoz = new Audio('images/qiyanaVoz.mp3');
-const sylasVoz = new Audio('images/sylasVoz.mp3');
+
+// const kayleVoz = new Audio('images/kayleVoz.mp3');
+// const ireliaVoz = new Audio('images/ireliaVoz.mp3');
+// const qiyanaVoz = new Audio('images/qiyanaVoz.mp3');
+// const sylasVoz = new Audio('images/sylasVoz.mp3');
 
 
 

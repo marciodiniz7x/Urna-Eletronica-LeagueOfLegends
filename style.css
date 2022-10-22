@@ -9,7 +9,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: aliceblue;
     text-align: center;
-    background: url(/images/background.jpg);
+    background: url(images/background.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 1080px;
