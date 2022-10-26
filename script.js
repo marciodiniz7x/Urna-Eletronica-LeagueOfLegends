@@ -27,7 +27,10 @@ let yuumi = document.querySelector('.yuumi');
 let telaBranca = document.querySelector('.telabranca');
 
 let jax = document.querySelector('.jax');
+
 const music = new Audio('images/jaxVotou.mp3');
+const beep = new Audio('images/beep.mp3');
+
 
 // const kayleVoz = new Audio('images/kayleVoz.mp3');
 // const ireliaVoz = new Audio('images/ireliaVoz.mp3');
@@ -51,20 +54,10 @@ const loop = setInterval(() => {
         telainicial.classList.add('sumir');
         qiyana.classList.remove('sumir');
 
-        qiyanaVoz.play();
-        setTimeout(() => {
-            qiyanaVoz.src = 'none'
-        }, 1300);
-
           
     } else if (digito1.value == "1" && digito2.value == "1") {
         telainicial.classList.add('sumir');
         irelia.classList.remove('sumir'); 
-
-        ireliaVoz.play();
-        setTimeout(() => {
-            ireliaVoz.src = 'none';
-        }, 2000);
         
     } else if (digito1.value == "1" && digito2.value == "3") {
         telainicial.classList.add('sumir');
@@ -92,6 +85,9 @@ const loop = setInterval(() => {
 
 // Funções dos Botões ///////////////////////////////////////////////
 function digitar(numero) {
+
+    beep.play();
+
     if (fim === false && votoBranco === false) {
         if (digito1.value == "" && digito2.value == "") {
             digito1.value = numero;
@@ -106,6 +102,9 @@ function digitar(numero) {
 }
 
 function branco() {
+
+    beep.play();
+
     if (fim === false) {
         if (digito1.value == "" && digito2.value == "") {
             votoBranco = true;
@@ -116,6 +115,9 @@ function branco() {
 }
 
 function corrige() {
+
+    beep.play();
+    
     if (fim === false) {
         kayle.classList.add('sumir');
         qiyana.classList.add('sumir');
