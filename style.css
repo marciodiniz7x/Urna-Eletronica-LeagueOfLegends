@@ -1,19 +1,28 @@
 body {
-    background: #242933;
+    
+    background: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-size: 250vh;
     overflow: hidden;
+    
 }
 
 #fundo {
-
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
     font: normal 15pt Arial;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: aliceblue;
     text-align: center;
-    background: url(images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 1080px;
-    width: 100%;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+    
+    
 }
 
 .cabecalho {
@@ -23,14 +32,14 @@ body {
 .yuumi {
     position: absolute;
     width: 250px;
-    margin-top: -730px;
+    
     margin-left: 300px;
     transition: 1500ms;
 }
 .yuumiAngular {
     position: absolute;
-    margin-top: -400px;
-    margin-left: 0px;
+    
+    margin-left: 300px;
     animation: angular 1500ms linear;
     transition: 1500ms;
 }
@@ -50,7 +59,7 @@ body {
     width: 807px;
     height: 450px;
     margin: auto;
-    border: 2px solid rgb(46, 46, 46);
+    border-radius: 10px;
 }
 
 .tela {
@@ -62,6 +71,7 @@ body {
     border: 1px solid rgb(196, 193, 193);
     margin-top: 20px;
     margin-left: 20px;
+    border-radius: 10px;
 }
 
 .painel {
@@ -71,6 +81,7 @@ body {
     background: rgb(49, 49, 49);
     margin-top: 91.9px;
     margin-left: 540px;
+    border-radius: 10px;
 }
 
 .logoruneterra {
@@ -95,6 +106,7 @@ body {
     width: 50px;
     height: 45px;
     box-shadow: 5px 5px 5px rgb(6, 7, 8);
+    border-radius: 10px;
 }
 .numero:hover {
     background: black;
@@ -107,6 +119,7 @@ body {
     border: none;
     height: 50px;
     box-shadow: 5px 5px 5px rgb(6, 7, 8);
+    border-radius: 10px;
 }
 #branco:hover {
     background: rgb(197, 197, 197);
@@ -119,6 +132,7 @@ body {
     border: none;
     height: 50px;
     box-shadow: 5px 5px 5px rgb(6, 7, 8);
+    border-radius: 10px;
 }
 #corrige:hover {
     background: rgb(201, 57, 38);
@@ -131,6 +145,7 @@ body {
     border: none;
     height: 60px;
     box-shadow: 5px 5px 5px rgb(6, 7, 8);
+    border-radius: 10px;
 }
 #confirma:hover {
     background: rgb(7, 114, 43);
@@ -286,16 +301,16 @@ body {
 
 /* TELA BRANCA //////////////////////////////////////////////////// */
 .telabranca {
+    margin: 0 auto;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
- 
+    height: 300vh;
+    width: 100vh;
     position: absolute;
     background: linear-gradient(45deg, blue, violet);
-    background-size: 100%;
-    width: 100%;
-    height: 1080px;
+    
 
     animation: brilhar 1500ms linear;
 }
@@ -365,7 +380,7 @@ body {
 
 @keyframes angular {
     0% { 
-        margin-top: -730px;
+        margin-top: 0px;
         margin-left: 300px;
          
     }
@@ -373,14 +388,14 @@ body {
         transform: rotate(0deg) translateX(180px) rotate(0deg);
     }
     50% {
-        margin-top: -400px;
+        margin-top: -0px;
         margin-left: 0px;
     }
     95% { 
         transform: rotate(360deg) translateX(180px) rotate(-360deg); 
     }
     100% {
-        margin-top: -730px;
+        margin-top: 0px;
         margin-left: 120px;
     }
 }
