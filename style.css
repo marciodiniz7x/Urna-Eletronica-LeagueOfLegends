@@ -4,14 +4,7 @@ body {
     background-repeat: no-repeat;
     background-size: 250vh;
     overflow: hidden;
-    
-}
-
-#fundo {
-    display: flex;
-    
-    justify-content: center;
-    flex-direction: column;
+ 
     position: absolute;
     font: normal 15pt Arial;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -303,9 +296,9 @@ h1 {
 /* TELA BRANCA //////////////////////////////////////////////////// */
 .telabranca {
     margin: 0 auto;
-    top: 0;
+    top: -10px;
     bottom: 0;
-    left: 0;
+    left: -10px;
     right: 0;
     height: 300vh;
     width: 300vh;
