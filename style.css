@@ -17,11 +17,6 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: aliceblue;
     text-align: center;
-
-    margin-left: 50%;
-    transform: translateX(-50%);
-    
-    
     
 }
 
@@ -33,7 +28,7 @@ body {
     position: absolute;
     width: 250px;
     
-    margin-left: 300px;
+    margin-left: -10vw;
     transition: 1500ms;
 }
 .yuumiAngular {
@@ -58,8 +53,14 @@ body {
     background: white;
     width: 807px;
     height: 450px;
-    margin: auto;
+    
     border-radius: 10px;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+
+h1 {
+    text-align: center;
 }
 
 .tela {
